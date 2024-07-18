@@ -1,0 +1,143 @@
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font: 16px var(--ff);
+  background-color: #24ada94f
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 0 1rem;
+  border-radius: 20px;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col-3 {
+  justify-content: space-between;
+}
+
+.b-1 {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.b-1 img {
+  margin-bottom: 10px;
+}
+
+section {
+  width: 90%;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  text-align: center;
+  height: auto;
+  padding: 20px 0;
+}
+
+h1 {
+  color: #fff;
+  margin-top: 12px;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+form input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  max-width: 270px;
+  border-radius: 20px;
+  height: 50px;
+  margin: 22px;
+  border: none;
+  background: #ebfffc;
+  padding: 10px 25px;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #96a6d1;
+}
+
+.btn:active {
+  background-color: #1b78c4;
+}
+
+h2.temperature {
+  font-size: 30px;
+}
+
+.cloud {
+  margin-top: -20px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+
+  h2.temperature {
+    font-size: 40px;
+  }
+
+  .btn {
+    height: 60px;
+    width: 60px;
+  }
+
+  .b-1 img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 800px;
+  }
+
+  h2.temperature {
+    font-size: 50px;
+  }
+
+  .btn {
+    height: 70px;
+    width: 70px;
+  }
+
+  .b-1 img {
+    height: 70px;
+    width: 70px;
+  }
+}
